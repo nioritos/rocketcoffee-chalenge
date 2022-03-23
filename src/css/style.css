@@ -1,0 +1,141 @@
+/*Global configs =================================*/
+body, *, .app {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+}
+
+body {
+    background: var(--backgroudn);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;700&display=swap');
+
+:root {
+    --backgroudn: #000;
+    --text-color: #FFF;
+    --button: #8257e5;
+    --border: #29292e;
+    --border-menu-mobile: #a8a8b3;
+    --text-color-menu-mobile: #e1e1e6;
+}
+
+.blur-1{
+    position: absolute;
+    z-index: 1000;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-items: flex-start;
+    align-items: flex-end;
+}
+
+.blur-2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1000;
+    display: flex;
+    justify-items: flex-end;
+    align-items: flex-start;
+}
+
+.blur-2 img {
+    width: 100%;
+}
+
+.app {
+
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+ul,li,a {
+    text-decoration: none;
+    list-style: none;
+}
+
+/*Header content configs =================================*/
+
+.header {
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigator {
+    margin: 0 0 0 8rem;
+    width: 75%;
+    height: 4rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hyperlinks-configs {
+    display: flex;
+    flex-direction: row;
+    align-items: center ;
+    justify-content: center;
+}
+
+.get-coffee {
+    padding: 11px 38px;
+    border: 1px solid var(--button);
+    border-radius: 6px;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+}
+
+li {
+    margin: 0 2rem;
+
+}
+
+li a {
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/*Container content configs =================================*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .texts-logo {
+    text-align: center;
+}
+
+.container .h1 {
+    font-weight: 700;   
+    font-size: 80px;
+    color: var(--text-color);
+}
+
+.container .text-shadow {
+    color: var(--backgroudn);
+}
+
+.text-shadow {
+    text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
+}
+
+.content-logo {
+    z-index: 9999;
+}
