@@ -21,30 +21,6 @@ body {
     --text-color-menu-mobile: #e1e1e6;
 }
 
-.blur-1{
-    position: absolute;
-    z-index: 1000;
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-items: flex-start;
-    align-items: flex-end;
-}
-
-.blur-2 {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1000;
-    display: flex;
-    justify-items: flex-end;
-    align-items: flex-start;
-}
-
-.blur-2 img {
-    width: 100%;
-}
-
 .app {
 
     width: 100%;
@@ -61,81 +37,92 @@ ul,li,a {
 }
 
 /*Header content configs =================================*/
-
-.header {
+#header {
     width: 100%;
-    height: 7rem;
+    height: 5rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    margin-bottom: 5rem;
 }
 
 .navigator {
-    margin: 0 0 0 8rem;
-    width: 75%;
-    height: 4rem;
-
+    width: 80%;
+    height: 5rem;
     display: flex;
-    justify-content: space-between;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;
+
 }
 
-.hyperlinks-configs {
-    display: flex;
-    flex-direction: row;
-    align-items: center ;
-    justify-content: center;
-}
-
-.get-coffee {
-    padding: 11px 38px;
-    border: 1px solid var(--button);
-    border-radius: 6px;
-}
-
-ul {
+.box-lists {
+    margin-left: 5rem;
     display: flex;
     flex-direction: row;
 }
 
-li {
-    margin: 0 2rem;
-
-}
-
-li a {
-    color: var(--text-color);
+.hyperlink-nav {
     font-size: 14px;
-    font-weight: 500;
+    margin: 0 1rem;
 }
 
+.hyperlink-getcoffee {
+    margin-right: -3rem;
+    border: 1px solid var(--button);
+    border-radius: 0.30rem;
+    padding: 0.8rem 2.7rem;
+}
 
+.hyperlink-getcoffee a{
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.a-nav {
+    color: var(--text-color);
+    font-weight: normal;
+    font: 400;
+}
+
+.blur-1 {
+    width: 100%;
+    position: absolute;
+    z-index: -999;
+}
 /*Container content configs =================================*/
 
-.container {
-    display: flex;
-    flex-direction: column;
+.container, .content {
+    width: 100%;
+    height: 100%;
+    display: grid;
 }
 
-.container .texts-logo {
+.texts-logo h1{ 
     text-align: center;
-}
-
-.container .h1 {
-    font-weight: 700;   
+    font-weight: bold;
     font-size: 80px;
     color: var(--text-color);
+
+    margin-bottom: 1.1rem;
 }
 
-.container .text-shadow {
-    color: var(--backgroudn);
-}
-
-.text-shadow {
+.text-logo-shadow, .text-logo-shadow code {
+    color: #000;
     text-shadow: -1px -1px 0 var(--button), 1px -1px 0 var(--button), -1px 1px 0 var(--button), 1px 1px 0 var(--button);
 }
 
-.content-logo {
-    z-index: 9999;
+
+
+.img-logo {
+    margin: 0 auto;
+}
+
+.blur-2 {
+    margin-top: 3rem;
+    z-index: -1;
+    position: absolute;
 }
